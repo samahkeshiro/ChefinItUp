@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo1.jpg" alt="Logo" style="width:800px;height:300px;">
+        <h1>Recipe Finder</h1>
+
+        <p>Enter the ingredients you have, and we'll find recipes for you!</p>
+    </header>
+
+    <main>
+        <section id="ingredient-input">
+            <h2>What ingredients do you have?</h2>
+            <textarea id="ingredients" placeholder="e.g., egg, chicken, rice, tomato"></textarea>
+            <button onclick="getRecipes()">Find Recipes</button>
+        </section>
+
+        <section id="recipes">
+            <h2>Recipes</h2>
+            <div id="recipe-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Finder</p>
+    </footer>
+
+    <script src="sc.js"></script>
+</body>
+</html>

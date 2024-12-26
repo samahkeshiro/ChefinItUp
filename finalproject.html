@@ -1,0 +1,72 @@
+<head>
+  <title>Recipe Website</title>
+  <link rel="stylesheet" href="coverpage.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <img
+      src="logo1.jpg"
+      alt="Logo"
+      style="width: 800px; height: 300px"
+      class="logo"
+    />
+    <p class= "p1">
+      New apartment as a college student? Don't know what to make with what you
+      already have? This website is for you!
+    </p>
+
+    <!-- Dropdown menu-->
+    <div class="main">
+      <div class="dropList">
+        <button class="drop-button" onclick="toggleMenu()">Get Started</button>
+        <div class="dropdown-menu" id="dropMenu">
+          <a href="finalproj.html">What's in My Fridge</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel fade"></div>
+
+    <div class="review-container">
+      <p class= "p2" id="review">"This is the best recipe site ever! -Jane"</p>
+    </div>
+
+    <script src="imagecarousel.js"></script>
+
+    <script>
+      //toggle list
+      function toggleMenu() {
+        //access menu
+        const items = document.getElementById("dropMenu");
+
+        //check visibility
+        if (items.style.display == "block") {
+          items.style.display = "none"; //hide the menu
+        } else {
+          items.style.display = "block"; //shows the menu
+        }
+      }
+
+      //hide the menu on click
+      window.onclick = function (event) {
+        if (!event.target.matches(".drop_button")) {
+          const menu = document.getElementById("dropMenu");
+          if (menu.style.display === "block") {
+            mensu.style.display = "none";
+          }
+        }
+      };
+    </script>
+  </body>
+</head>

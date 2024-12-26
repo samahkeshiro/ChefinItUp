@@ -1,0 +1,95 @@
+body {
+    background-color: #e3d4bc;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .p1{
+    text-align: center;
+    margin-top: -30px;
+    font-size: 20px
+  }
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .drop-button {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    background-color: brown;
+    color: white;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    width: 200px;
+    border: 1px solid rgba(68, 6, 1, 0.938);
+    font-size: larger;
+  }
+  
+  #dropMenu {
+    display: none; /* Initially hides the dropdown menu */
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #dropMenu a {
+    display: block; /* Stack items vertically */
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+  }
+
+  #dropMenu a:hover {
+    background-color: #ddd; /* Highlight on hover */
+  }
+
+  .carousel{
+    width: 320px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-size: cover;
+    background-image: url(pasta.jpg);
+    border: 2px solid rgba(68, 6, 1, 0.938);
+  }
+
+  .fade{
+    -webkit-animation: 1.5s fade;
+    animation: 1.5s fade;
+  }
+
+  @-webkit-keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1;}
+  }
+
+  @keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1;}
+  }
+
+  .review-container {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  #review {
+    animation: fade 1.5s;
+  }
